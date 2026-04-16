@@ -15,6 +15,36 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <title>TechWave</title>
+    <style>
+        .microphone-rotate {
+            -webkit-animation: rotate-center 3s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite both;
+            animation: rotate-center 3s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite both;
+        }
+
+        @-webkit-keyframes rotate-center {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-center {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-[#1A0B2E] font-inter">
@@ -56,7 +86,10 @@
             <div class="top-0 w-full absolute">
                 <div class="flex items-center justify-center w-full mb-10 pt-5 lg:pt-24">
                     <img class="w-[25%] lg:w-[22%]" src="./assets/hero-circle.png" alt="hero-circle">
-                    <img class="absolute w-[8%] lg:w-[8%]" src="./assets/microphone.png" alt="microphone">
+                    <p
+                        class=" absolute bg-center ml-[15%] top-[10%] gl:top-[20%] lg:ml-[15%] lg:top-[20%] px-2 rounded-full bg-[#00FF88]">
+                        New</p>
+                    <img class="microphone-rotate w-[8%] lg:w-[8%] absolute" src="./assets/microphone.png" alt="microphone">
                 </div>
                 <!-- hero content -->
                 <div class="gap-5 items-center text-white flex flex-col ">
